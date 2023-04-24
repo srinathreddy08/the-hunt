@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const WQ3 = () => {
     return (
-        <div>
+        <div className='text-center m-5'>
             {/* Question goes here */}
             <div>
-                <p>
-                    Which cities of India got it's first official Apple store?
+                <p className='lead'>
+                    Q3: Which cities of India got it's first official Apple store?
                 </p>
             </div>
 
@@ -17,19 +17,42 @@ const WQ3 = () => {
             </div>
 
             {/* Options goes here */}
-            <div>
-                <Link to='/defeat'>
-                    <button>Delhi</button>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} className='m-5'>
+                
+
+
+
+                <p>a)<Link to='/defeat'>
+                    <button className='btn btn-success'>Delhi</button>
                 </Link>
+
+                </p>
+                
+                <br/>
+
+                <p>b)
                 <Link to='/defeat'>
-                    <button>Hyderabad</button>
+                    <button className='btn btn-warning'>Hyderabad</button>
                 </Link>
+                    
+                </p>
+                
+                <br/>
+                <p>c)
                 <Link to='/defeat'>
-                    <button>Banglore</button>
+                    <button className='btn btn-danger'>Bangalore</button>
                 </Link>
+                </p>
+                
+                <br/>
+                <p>d)
                 <Link to='/exit'>
-                    <button>Mumbai</button>
+                    <button className='btn btn-primary'>Mumbai</button>
                 </Link>
+
+                </p>
+                
+                <br/>
             </div>
         </div>
     );

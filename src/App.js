@@ -44,7 +44,7 @@ function App() {
         {
           hasLoggedIn
             ?
-            <button className="btn btn-outline-success my-2 my-sm-0" onClick={handleLogout}>Logout</button>
+            <button className="btn btn-primary my-2 my-sm-0" onClick={handleLogout}>Logout</button>
             :
             <></>
         }

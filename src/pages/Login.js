@@ -50,10 +50,18 @@ const Login = (params) => {
                     <img className='mx-auto d-block' src={loading} alt='loading...' />
                 </div>
                 :
-                <div>
-                    <form>
-                        <div className="mb-3">
-                            <label for="email" className="form-label">Email address</label>
+                <div className='d-flex align-items-center justify-content-center vh-100'>
+                    
+
+
+                
+
+                
+<h1 className='text-center text-success m-5'>Sign in/ Sign Up</h1>
+
+                    <form >
+    
+                            <label for="email" className="form-label">Email address
                             <input
                                 type="email"
                                 className="form-control"
@@ -63,9 +71,10 @@ const Login = (params) => {
                                 onChange={(e) => setStateEmail(e.target.value)}
                                 required
                             />
-                        </div>
-                        <div className="mb-3">
-                            <label for="password" className="form-label">Password</label>
+                            </label>
+                            <br/>
+                        
+                            <label for="password" className="form-label">Password
                             <input
                                 type="password"
                                 className="form-control"
@@ -74,12 +83,32 @@ const Login = (params) => {
                                 onChange={(e) => setStatePassword(e.target.value)}
                                 required
                             />
-                        </div>
-                        <button onClick={handleLogin}>login</button>
-                    </form>
-                    <Link to='/signup'>
+                            </label>
+                            <br/>
+                        {/* <button className='btn btn-primary' onClick={handleLogin}>login</button>
+                        <br/>
+                        <br/>
+                        <Link to='/signup'>
                         <button className='btn btn-primary'>Sign Up</button>
-                    </Link>
+                        </Link> */}
+
+                        <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} >
+                            <button style={{ flex: '1', marginRight: '10px' }}  className='btn btn-primary'onClick={handleLogin} >login</button>
+                            <Link style={{ flex: '1', marginLeft: '10px' }}  to='/signup'>
+                            <button className='btn btn-primary' >SignUp</button>
+                            </Link>
+                        </div>
+
+                    </form>
+                    
+
+
+                
+
+
+
+
+
                 </div>
             }
         </div>

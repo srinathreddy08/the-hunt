@@ -53,7 +53,9 @@ const SignUp = () => {
     }
 
     return (
-        <div>
+        <div className='m-5'>
+            <h1 className='text-center m-5'>SignUp</h1>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} className='m-5'>
             {
                 isLoading
                 ?
@@ -120,10 +122,13 @@ const SignUp = () => {
                             required
                         />
                     </div>
-                    <button onClick={handleSignUp}>Sign Up</button>
+                    <button className='btn btn-success' onClick={handleSignUp}>Sign Up</button>
                 </form>
             }
         </div>
+
+        </div>
+        
     );
 }
 

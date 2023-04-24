@@ -54,11 +54,11 @@ const Q5 = () => {
     }
 
     return (
-        <div>
+        <div className='text-center m-5'>
             {/* Question goes here */}
             <div>
-                <p>
-                    From the video cited in question-2, What is the name of the statue of dog?
+                <p className='lead'>
+                    Q5: From the video cited in question-2, What is the name of the statue of dog?
                     Choose the answer as sum of the ASCII values of the letters of dog's name.
                     (Note: choose letters as lower case english alphabets)
                 </p>
@@ -70,19 +70,38 @@ const Q5 = () => {
             </div>
 
             {/* Options goes here */}
-            <div>
-                <Link to='/wq1'>
-                    <button>295</button>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} className='m-5'>
+                
+
+
+                <p>a)<Link to='/wq1'>
+                    <button className='btn btn-success'>295</button>
                 </Link>
-                <Link to='/wq1'>
-                    <button>299</button>
+
+                </p>
+                <br/>
+                <p>b)<Link to='/wq1'>
+                    <button className='btn btn-warning'>299</button>
                 </Link>
-                <Link to='/won' onClick={() => initEndTrial()}>
-                    <button>297</button>
+
+                </p>
+                <br/>
+                <p>c)<Link to='/won' onClick={() => initEndTrial()}>
+                    <button className='btn btn-danger'>297</button>
                 </Link>
-                <Link to='/wq1'>
-                    <button>296</button>
+
+                </p>
+                <br/>
+                <p>d)<Link to='/wq1'>
+                    <button className='btn btn-primary'>296</button>
                 </Link>
+
+                </p>
+                <br/>
+
+
+
+
             </div>
         </div>
     );
