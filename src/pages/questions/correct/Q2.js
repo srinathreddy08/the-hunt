@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Q2 = () => {
     return (
-        <div>
+        <div className='text-center m-5'>
             {/* Question goes here */}
-            <div>
+            <div className='m-4 lead'>
                 <p>
                     <b>Watch the below video carefully</b> to answer the question.
                 </p>
             </div>
 
             {/* Image goes here */}
-            <div>
+            <div className='m-4'>
                 <iframe 
                     width="560" 
                     height="315" 
@@ -26,23 +26,42 @@ const Q2 = () => {
 
             {/* Question goes here */}
             <div>
-                <p>What is the color of the shirt the last person helped by dog was wearing?</p>
+                <p className='lead'>Q2: What is the color of the shirt the last person helped by dog was wearing?</p>
             </div>
 
             {/* Options goes here */}
-            <div>
-                <Link to='/wq1'>
-                    <button>Orange</button>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} className='m-5'>
+                
+
+                <p>a)<Link to='/wq1'>
+                    <button className='btn btn-success'>Orange</button>
                 </Link>
-                <Link to='/wq1'>
-                    <button>White</button>
+
+                </p>
+                <br/>
+                <p>b)<Link to='/wq1'>
+                    <button className='btn btn-warning'>White</button>
                 </Link>
-                <Link to='/wq1'>
-                    <button>Brown</button>
+
+                </p>
+                <br/>
+                <p>c)<Link to='/wq1'>
+                    <button className='btn btn-danger'>Brown</button>
                 </Link>
-                <Link to='/q3'>
-                    <button>Yellow</button>
+
+                </p>
+                <br/>
+                <p>d)<Link to='/q3'>
+                    <button className='btn btn-primary'>Yellow</button>
                 </Link>
+
+                </p>
+                <br/>
+
+
+
+
+
             </div>
         </div>
     );

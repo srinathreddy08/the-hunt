@@ -17,13 +17,32 @@ const Main = () => {
         dispatch(setTime(sessionData))
     }
 
+    const buttonStyle = {
+        margin: 'auto',
+        display: 'block',
+      };
+
+
     return (
         <div>
-            <Link to='/q1' onClick={() => initDispatch()}>
-                <button className='btn btn-primary'>
-                    Let's Start
-                </button>
+
+            <h1 style={{fontSize:"10vw"}} className='text-center text-success m-5'>-THE HUNT BEGINS-</h1>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+            <Link to='/q1' onClick={()=>initDispatch()}>
+            <button className='btn btn-warning' style={buttonStyle}>
+                Let's Start
+            </button>
             </Link>
+
+
+
+
         </div>
     );
 }

@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const WQ2 = () => {
     return (
-        <div>
+        <div className='text-center m-5'>
             {/* Question goes here */}
             <div>
-                <p>
+                <p className='lead'>
                     Identify the king depicted in below image.
                     (Hint: Founder of Marata Empire)
                 </p>
@@ -20,23 +20,47 @@ const WQ2 = () => {
 
             {/* Question goes here */}
             <div>
-                <p>Who is the son above king in given options.</p>
+                <p className='lead m-3'>Q2: Who is the son above king in given options.</p>
             </div>
 
             {/* Options goes here */}
-            <div>
-                <Link to='/defeat'>
-                    <button>Thanaji</button>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} className='m-5'>
+                
+
+                <p>a)<Link to='/defeat'>
+                    <button className='btn btn-success'>Thanaji</button>
                 </Link>
+
+                </p>
+                
+                <br/>
+
+                <p>b)
                 <Link to='/wq3'>
-                    <button>Sambhaji</button>
+                    <button className='btn btn-warning'>Sambhaji</button>
                 </Link>
+                    
+                </p>
+                
+                <br/>
+                <p>c)
                 <Link to='/defeat'>
-                    <button>Shivaji</button>
+                    <button className='btn btn-danger'>Shivaji</button>
                 </Link>
+                </p>
+                
+                <br/>
+                <p>d)
                 <Link to='/defeat'>
-                    <button>Maharana Pratap</button>
+                    <button className='btn btn-primary'>Maharana Pratap</button>
                 </Link>
+
+                </p>
+                
+                <br/>
+
+
+
             </div>
         </div>
     );

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setTime, setDuration, resetSession } from '../../../redux/sessionSlice';
 import { db } from '../../../firebase/Firebase'
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
+import devil_image from '../../../assets/images/devil.gif'
 
 const Delete = () => {
 
@@ -55,11 +56,17 @@ const Delete = () => {
     }
 
     return (
-        <div>
-            <p>Defeat page</p>
+        <div className='text-center m-5'>
+            <h1 className='text-danger m-5'>Oops!</h1>
             <Link to='/' onClick={() => initEndTrial()}>
-                <button>Retry</button>
+                <button className='btn btn-primary'>Try Again</button>
             </Link>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <img src={devil_image} alt='image is not available' />
+
         </div>
     );
 }

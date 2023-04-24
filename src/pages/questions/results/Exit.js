@@ -54,10 +54,13 @@ const Exit = () => {
     }
 
     return (
-        <div>
-            <p>Exit page</p>
+        <div className='text-center m-5'>
+            <h1 className='text-warning m-5'>You have defeated</h1>
+            <h1 className='text-danger m-5'>You have choosen right option but wrong path</h1>
+
+
             <Link to='/' onClick={() => initEndTrial()}>
-                <button>Retry</button>
+                <button className='btn btn-primary'>Exit</button>
             </Link>
         </div>
     );

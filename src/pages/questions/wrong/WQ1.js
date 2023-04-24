@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const WQ1 = () => {
 
     return (
-        <div>
+        <div className='text-center m-5'>
             {/* Question goes here */}
             <div>
-                <p>
-                    Bobos coach has five players:
+                <p className='lead'>
+                    Q1: Bobos coach has five players:
                     Four are named jojo, koko, lolo, and momo. What is the fifth players name?
                     Options
                 </p>
@@ -20,19 +20,44 @@ const WQ1 = () => {
             </div>
 
             {/* Options goes here */}
-            <div>
-                <Link to='/defeat'>
-                    <button>Nono</button>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }} className='m-5'>
+                
+
+
+                <p>a)<Link to='/defeat'>
+                    <button className='btn btn-success'>Nono</button>
                 </Link>
+
+                </p>
+                
+                <br/>
+
+                <p>b)
                 <Link to='/defeat'>
-                    <button>Soso</button>
+                    <button className='btn btn-warning'>Soso</button>
                 </Link>
+                    
+                </p>
+                
+                <br/>
+                <p>c)
                 <Link to='/defeat'>
-                    <button>Hoho</button>
+                    <button className='btn btn-danger'>Hoho</button>
                 </Link>
+                </p>
+                
+                <br/>
+                <p>d)
                 <Link to='/wq2'>
-                    <button>Bobo</button>
+                    <button className='btn btn-primary'>Bobo</button>
                 </Link>
+
+                </p>
+                
+                <br/>
+
+
+
             </div>
         </div>
     );
