@@ -16,10 +16,13 @@ In this project there will be 5 questions in a sequence which will be correct if
 2. Install Node
 3. Install Favourite Code Editor (like VS Code)
 4. clone current repo by:
--- git clone https://github.com/srinathreddy08/the-hunt.git
+#####
+      git clone https://github.com/srinathreddy08/the-hunt.git
 
 5. Install all package.json dependencies:
--- npm i
+#####
+      npm i
 
 6. To start the app:
--- npm start
+#####
+      npm start
